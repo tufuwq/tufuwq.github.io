@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+            color: aqua;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        } */
+  
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <!-- <form action="#" id="myform" onsubmit="submitHandel"><input type="text" id="password"><input type="text" id="username">
+    <button id="resetbtn">重置</button>
+    <button >提交</button>
+</form> -->
+    <!-- <input type="text" id="name"> -->
+    <!-- <a href="$" id="it">ewfe</a> -->
+    <!-- <button id="btn1">1</button>
+    <button id="btn2">2</button>
+    <button id="btn3">3</button>
+    <button id="btn4">4</button>
+    <div id="btn5" class="box1"></div> -->
+    <!-- <button onClick="clickHandle()">dajiahao</button>
+    <button id="wq">dwd</button> -->
+    <!-- <div class="box" id="root">
+        hello
+    </div> -->
+    <script>
+        function Person(){
+
+        }
+        //类不提升
+        class Person{
+            constructor(name,age){
+                this.name = name;
+                this.age = age
+            }
+            getName(){
+                console.log(this.name);
+            }
+        }
+        var p = new Person("iwne",20);
+        p.getName()
+        // setTimeout(fun(){
+
+        // },1000)
+        // clearTimeout
+        // var intral = setInterval(fun(){
+            
+
+        // },1000)//间隔打印
+        // window.onscroll = debouse(scrollHandel,200);
+        // function debouse(fn,delay){
+        //     var timer = null;
+        //     return function(){
+        //         if(timer){
+        //             clearTimeout(timer);
+        //         }
+        //         timer = setTimeout(fn,delay)
+
+        //     }
+        // }
+        // function throttel(fn,delay){
+        //     var valid = true;
+        //     return function(){
+        //         if(!valid){
+        //             return false;
+        //         }
+        //         valid = false;
+        //         setTimeout(function(){
+        //             fn();
+        //             valid = true;
+        //         },delay)
+        //     }
+        // }
+        // clearInterval(intral);
+        // var list = document.getElementById("list");
+        // function scrollHandel(){
+        //     var scrollTop = document.documentElement.scrollTop;
+        //     console.log(scrollTop)
+        // }
+        // list.addEventListener("click",function(){
+        //     if(event.target.tagName === "LI"){
+        //         console.log(event.target.innerHTML)
+        //     }
+
+        // }
+        // )
+
+        // let//块级作用域
+        // const//声明后不可改变，在初始化时赋值，块级作用域，不存在变量提升
+        // let{name1,rge} = {name1:"w2e" ,age:23};
+        // var user={
+        //     name="iwj",
+        //     age=23
+        // }
+        // const {name,age} =user;
+        // console.log(name,age);
+        // for(i of str){
+
+        // }
+        //动态标签
+        // var a1="<a herf'"+href+"'"
+        // var dwij = `<a href="${href}"> uuwdguid`
+        // sq.includes('',4)
+        // sq.startsWith('',4)
+        // sq.endsWith('',5)
+        // 's'.repeat(4)
+        // 's'.padStart(4)
+        // 's'.padEnd(4)
+        // sq.trimStart()
+        // sq.at(2)//位置
+        // console.log(...[1,2,3])
+        // console.log(Math.max(...arr));
+        // [...arr1,...arr2]
+        // Array.from
+        // function add(){
+        //     let collect = Array.from(arguments);
+        //     collect.push(40);
+        //     console.log(collect);
+        // }
+        // add(10,20,30)
+        // let titles = document.querySelectorAll("h3");
+        // console.log(Array.from(titles))
+        // var user={
+        //     '1' :12,
+        //     '2' :13,
+        //     '3' :14,
+        //     length:3
+
+        // }
+        // it="1212"
+
+        // var user ={
+        //     [it]:"sd",
+        //     age:23,
+        //     getname(){
+        //         console.log()
+        //         return { name,age }
+        //     }
+            
+
+        // }
+        // var n = {...user}
+        // var fn3 = (x,y) => x+y
+        // fn4 = () => ({x:12,y:23})
+        // var s= new Set(arr)
+        // [...new Set(arr)]
+        // function load(url){
+        //     const promise = new Promise(function(resolve,reject){
+        //         const image = new Image();
+        //         image.src = url
+        //         image.onload = function(){
+        //             resolve(image)
+        //         }
+        //         image.onerror = function(){
+        //             reject("")
+        //         }
+        //     })
+        //     return promise;
+        // }
+        // const promise = load("")
+        // promise.then(function(data){
+        //     box.addendChild(data)
+        // },function(error){
+        //     box.innerHTML = "失败"
+        // })
+        // async()//异变同，计时器异步前置+ await
+        // function timeout(ms){
+        //     return new Promise((resolve,reject)=>{
+        //         setTimeout(function(){
+        //             console.log("");
+        //             resolve();
+        //         },ms)
+        //     })
+        // }
+
+         
+
+
+
+
+
+
+         
+        // var username = document.getElementById("username");
+        // username.oninput = function(e){
+        //     console.log(event.target.value)
+        // }
+        // username.onselect = function(e){
+        //     console.log()
+        // }
+        // username.onchange = function(e){
+        //     console.log(event.target.value)
+        // }
+        // var myform = document.getElementById("myform")
+        // var resetbtn = document.getElementById("resetbtn")
+        // resetbtn.onclick = function(){
+        //     myform.reset();
+        // }
+        // function submitHandel(){
+        //     console.log("")
+        // }
+
+
+        // var name = document.getElementById("name");
+        // name.onkeydown = function(event){
+        //     console.log("sqsq");
+        //     if(event.keyCode === 13){
+        //     }
+
+        // }
+        // name.onkeyup = function(e){
+        //     console.log(e.target.value);
+
+        // }
+        // btn.onclick =function(e){
+        //     event.target.innerHTML = "点击之后"
+        //     console.log(event.type);
+        // }
+        // var wq = document.getElementById("it")
+        // it.onclick = function(e){
+        //     // e.preventDefault();阻止事件默认状态，也可以是传递阻止
+        //     event.stopPropagation();
+        //     console.log("efhu");
+
+        // }
+        // var btn1 = document.getElementById("btn1")
+        // var btn2 = document.getElementById("btn2")
+        // var btn3 = document.getElementById("btn3")
+        // var btn4 = document.getElementById("btn4")
+        // var btn5 = document.getElementById("btn5")
+      
+        
+        // btn1.onclick = function(){
+        //     console.log("1")
+        // }
+        // btn2.ondbclick = function(){
+        //     console.log("2")
+        // }
+        // btn3.onmousedown = function(){
+        //     console.log("3")
+        // }
+        // btn4.onmouseup = function(){
+        //     console.log("4")
+        // }
+        // btn5.onmousemove = function(){
+        //     console.log("5")
+        // }
+        // btn5.onmouseenter = function(){
+        //     console.log("6")
+        // }
+        // btn5.onmouseenter = function(){
+        //     console.log("7")
+        // }
+        // // 子集也会触发
+        // btn5.onmouseover = function(){
+        //     console.log("8")
+        // }
+        
+        // btn5.onmouseout = function(){
+        //     console.log("9")
+        // }
+
+        // var root=document.getElementById("root");
+        // root.id="roots";
+        // root.className="box box1";
+        // console.log(root.classList.add("mybox"));
+        // if(root.classList.contains("box1")){
+        //     console.log('1')
+        // }else{
+        //     console.log('2')
+        // }
+        // var box = document.getElementById("root");
+        // console.log(box.offsetLeft)
+        // console.log(box.offsetTop);
+        // root.setAttribute("style","width:200px;height:200px;background='red';")
+        // box.style.width=200px;
+        // box.style.cssText=,"width:200px;height:200px;background='red';";
+        // function clickHandle(){
+        //     console.log("wos")
+        // }
+        // 一次，会被覆盖
+        // var btn = document.getElementById('wq');
+        
+        // btn.onclick=function(){
+        //     console.log("点击")
+
+        // }
+        // 不会被覆盖可多次
+        //  var btn = document.getElementById('wq');
+        //  btn.addEventListener("click",function(){
+        //     console.log("点击了1")
+        //  })
+        //  btn.addEventListener("click",function(){
+        //     console.log("点击了2")
+        //  })
+
+
+    </script>
+</body>
+</html>
